@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, blue,rgba(33, 33, 175, 0.774), lightblue);
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    width: 400px;
+    height: 500px;
+    background-color: red;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.459);
+    
+    
+
+}
+.simbol{
+    font-size: 3rem;
+    width: 400px;
+    background-color: black;
+    color:white ;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.display{
+   text-align: right;
+   padding: 10px;   
+   font-size: 2rem;
+   font-family: monospace;
+   background-color: rgb(0, 0, 0);
+   color: white;
+   height: 80px;
+   display: flex;
+   align-items: center;
+   justify-content: right;
+}
+
+.calc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.number{
+    background-color: rgb(231, 229, 229);
+    padding: 10px;
+    font-size: 2rem;
+    margin: 10px;
+    width: 70px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: 0.3s ease;
+    
+}  
+
+.number:hover{
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+}
+
+.operator{
+    background-color: rgb(231, 229, 229);
+    padding: 10px;
+    font-size: 2rem;
+    margin: 10px;
+    width: 70px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.operator:hover{
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+}
+
+.equal{
+    background-color: rgb(231, 229, 229);
+    padding: 10px;
+    font-size: 2rem;
+    margin: 10px;
+    width: 70px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.equal:hover{
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+}
+
+.power{
+   
+    background-color: rgb(231, 229, 229);
+    padding: 10px;
+    font-size: 2rem;
+    margin: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    border: 3px solid black;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+
+.power:hover{
+    transform: scale(1.15);
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+}
