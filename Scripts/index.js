@@ -11,6 +11,9 @@ const btn2 = document.getElementById('2');
 const btn3 = document.getElementById('3');
 const btn0 = document.getElementById('0');
 const numbers = document.getElementsByClassName('number');
+const simbol = document.getElementById('simbol');
+const calculator = document.getElementsByClassName('content');
+const calculatorTransparent = document.getElementsByClassName('content_transparent')
 
 
 
@@ -48,3 +51,14 @@ btn1.addEventListener('click', () => handleNumberClick(1));
 btn2.addEventListener('click', () => handleNumberClick(2));
 btn3.addEventListener('click', () => handleNumberClick(3));
 btn0.addEventListener('click', () => handleNumberClick(0));
+
+
+
+
+simbol.addEventListener('click', (e) => {
+    if (calculator[0].classList.contains('content_transparent')) {
+        calculator[0].classList.remove('content_transparent'); // Faz o elemento reaparecer
+    } else {
+        calculator[0].classList.add('content_transparent'); // Faz o elemento desaparecer
+    }
+});
