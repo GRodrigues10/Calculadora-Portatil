@@ -10,6 +10,7 @@ const btn1 = document.getElementById('1');
 const btn2 = document.getElementById('2');
 const btn3 = document.getElementById('3');
 const btn0 = document.getElementById('0');
+const btnPonto = document.getElementById('btnPonto');
 const numbers = document.getElementsByClassName('number');
 const simbol = document.getElementById('simbol');
 const calculator = document.getElementsByClassName('content');
@@ -51,6 +52,7 @@ btn1.addEventListener('click', () => handleNumberClick(1));
 btn2.addEventListener('click', () => handleNumberClick(2));
 btn3.addEventListener('click', () => handleNumberClick(3));
 btn0.addEventListener('click', () => handleNumberClick(0));
+btnPonto.addEventListener('click', () => handleNumberClick('.'));
 
 
 
