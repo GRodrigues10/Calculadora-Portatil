@@ -58,7 +58,10 @@ btn0.addEventListener('click', () => handleNumberClick(0));
 simbol.addEventListener('click', (e) => {
     if (calculator[0].classList.contains('content_transparent')) {
         calculator[0].classList.remove('content_transparent'); // Faz o elemento reaparecer
+        simbol.innerHTML = "<i class='bx bx-up-arrow-alt'></i>";
+
     } else {
         calculator[0].classList.add('content_transparent'); // Faz o elemento desaparecer
+        simbol.innerHTML = "<i class='bx bx-down-arrow-alt' ></i>";
     }
 });
