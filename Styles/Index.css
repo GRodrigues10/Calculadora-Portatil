@@ -27,6 +27,8 @@ body{
     height: 500px;
     background-color: red;
     border-radius: 5px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.459);
     
     
@@ -41,6 +43,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .display{
@@ -54,6 +57,9 @@ body{
    display: flex;
    align-items: center;
    justify-content: right;
+   border-radius: 5px;
+   border-bottom-left-radius: 0;
+   border-bottom-right-radius: 0;
 }
 
 .calc{
