@@ -15,6 +15,10 @@ const numbers = document.getElementsByClassName('number');
 const simbol = document.getElementById('simbol');
 const calculator = document.getElementsByClassName('content');
 const calculatorTransparent = document.getElementsByClassName('content_transparent')
+const sum = document.getElementById('sum');
+const sub = document.getElementById('sub');
+const mult = document.getElementById('mult');
+const div = document.getElementById('div');
 
 
 
@@ -41,6 +45,28 @@ function handleNumberClick(number) {
     }
 }
 
+function handleOperatorClick(operator) {
+    if (btnDisplay.innerHTML === 'Desligar') {
+        // Verifica se o display está vazio ou se termina com um operador
+        if (display.innerHTML === '' || ['+', '-', '*', '/'].includes(display.innerHTML.slice(-1))) {
+            return; // Não adiciona se estiver vazio ou terminar com um operador
+        } else {
+            display.innerHTML += operator; // Adiciona o operador ao display
+        }
+    }
+}
+
+// Adicionando eventos aos botões de operadores
+
+
+sum.addEventListener('click', () => handleOperatorClick('+'));
+sub.addEventListener('click', () => handleOperatorClick('-'));
+mult.addEventListener('click', () => handleOperatorClick('*'));
+div.addEventListener('click', () => handleOperatorClick('/'));
+
+
+
+
 // Adicionando eventos aos botões numéricos
 btn7.addEventListener('click', () => handleNumberClick(7));
 btn8.addEventListener('click', () => handleNumberClick(8));
@@ -53,6 +79,9 @@ btn2.addEventListener('click', () => handleNumberClick(2));
 btn3.addEventListener('click', () => handleNumberClick(3));
 btn0.addEventListener('click', () => handleNumberClick(0));
 btnPonto.addEventListener('click', () => handleNumberClick('.'));
+
+
+
 
 
 
