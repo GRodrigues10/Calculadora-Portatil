@@ -151,7 +151,7 @@ body{
     border: 3px solid white;
 }
 
-.power{
+.power, .limpar{
    
     background-color: rgb(231, 229, 229);
     padding: 10px;
@@ -166,12 +166,19 @@ body{
 
 }
 
-.power:hover{
+.power:hover, .limpar:hover{
     transform: scale(1.15);
     background-color: black;
     color: white;
     border: 3px solid white;
 }
+
+.org{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 @keyframes moveUp {
     from {

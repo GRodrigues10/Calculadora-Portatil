@@ -19,6 +19,8 @@ const sum = document.getElementById('sum');
 const sub = document.getElementById('sub');
 const mult = document.getElementById('mult');
 const div = document.getElementById('div');
+const equal = document.getElementById('equal');
+const limpar = document.getElementById('limpar');
 
 
 
@@ -96,3 +98,22 @@ simbol.addEventListener('click', (e) => {
         simbol.innerHTML = "<i class='bx bx-down-arrow-alt' ></i>";
     }
 });
+
+equal.addEventListener('click', (e)=>{
+    if(btnDisplay.innerHTML === 'Desligar'){
+        try {
+            if(display.innerHTML !== ''){
+                display.innerHTML = eval(display.innerHTML).toFixed(2);
+            }
+        } catch (error) {
+            display.innerHTML = 'Erro'
+        }
+    }
+})
+
+
+limpar.addEventListener('click', (e)=>{
+    if(btnDisplay.innerHTML === 'Desligar'){
+        display.innerHTML = '';
+    }
+})
