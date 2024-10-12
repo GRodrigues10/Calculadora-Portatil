@@ -106,7 +106,7 @@ equal.addEventListener('click', (e)=>{
                 display.innerHTML = eval(display.innerHTML).toFixed(2);
             }
         } catch (error) {
-            display.innerHTML = 'Erro'
+            display.innerHTML = 'Error'
         }
     }
 })
