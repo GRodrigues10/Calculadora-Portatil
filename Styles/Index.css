@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     border: none;
+
 }
 
 body{
     width: 100vw;
     height: 100vh;
     background: linear-gradient(to bottom, rgb(28, 33, 49) 11.4%, rgb(53, 63, 97) 70.2%);
+    
 }
 .container{
     width: 100vw;
@@ -36,6 +38,7 @@ body{
     /* border: 1px solid white; */
     
 }
+
 
 .content_transparent{
     display: none;
@@ -76,7 +79,7 @@ body{
    border-radius: 5px;
    border-bottom-left-radius: 0;
    border-bottom-right-radius: 0;
-   
+   /* border: 1px solid white; */
 
 }
 
@@ -96,7 +99,7 @@ body{
     margin: 10px;
     width: 70px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     border-radius: 5px;
     border: 3px solid black;
     cursor: pointer;
