@@ -58,6 +58,9 @@ body{
     transition: 0.3s ease;
     outline: none; /* Remove o contorno de foco */
     user-select: none; /* Impede seleção de texto */
+    border-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .simbol:hover{

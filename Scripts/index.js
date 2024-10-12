@@ -21,6 +21,7 @@ const mult = document.getElementById('mult');
 const div = document.getElementById('div');
 const equal = document.getElementById('equal');
 const limpar = document.getElementById('limpar');
+// let audio = new Audio('./Assets/bip.m4a');
 
 
 
@@ -41,8 +42,12 @@ function handleNumberClick(number) {
     if (btnDisplay.innerHTML === 'Desligar') {
         if (display.innerHTML === '0' && number !== 0) {
             display.innerHTML = number; // Substitui o 0 pelo número clicado (diferente de 0)
+            
+
+            
         } else {
             display.innerHTML += number; // Adiciona o número ao display
+            
         }
     }
 }
