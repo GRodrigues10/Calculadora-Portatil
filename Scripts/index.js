@@ -1,3 +1,5 @@
+// Calculadora Portátil
+
 const display = document.getElementById('display');
 const btnDisplay = document.getElementById('power');
 const btn7 = document.getElementById('7');
