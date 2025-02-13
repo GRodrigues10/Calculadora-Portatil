@@ -36,6 +36,7 @@ btnDisplay.addEventListener('click', (e) => {
         display.innerHTML = ''; // Limpa o display ao desligar
         btnDisplay.innerHTML = 'Ligar'; // Altera o texto do botão de volta para "Ligar"
     }
+    console.log(e);
 });
 
 
